@@ -1,1 +1,92 @@
-index.html
+index.html<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uma Carta Para Você ❤️</title>
+
+<style>
+body{
+    font-family: Georgia, serif;
+    background: #ffe6eb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    margin:0;
+}
+
+.carta{
+    background:white;
+    padding:30px;
+    max-width:600px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,0.15);
+}
+
+h1{
+    text-align:center;
+    color:#ff4d6d;
+}
+
+p{
+    line-height:1.8;
+    font-size:18px;
+}
+
+.botao{
+    display:block;
+    margin:25px auto 0;
+    background:#ff4d6d;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+#resposta{
+    text-align:center;
+    font-size:22px;
+    margin-top:20px;
+    color:#ff4d6d;
+}
+</style>
+</head>
+
+<body>
+
+<div class="carta">
+    <h1>Para Você ❤️</h1>
+
+    <p>
+        Desde que você entrou na minha vida, meus dias ficaram mais leves,
+        mais felizes e muito mais especiais.
+    </p>
+
+    <p>
+        Você se tornou alguém que eu gosto de ter por perto, alguém que me faz
+        sorrir mesmo nos dias difíceis.
+    </p>
+
+    <p>
+        E por isso quero te fazer uma pergunta...
+    </p>
+
+    <button class="botao" onclick="aceitar()">
+        Quer namorar comigo?
+    </button>
+
+    <div id="resposta"></div>
+</div>
+
+<script>
+function aceitar(){
+    document.getElementById("resposta").innerHTML =
+    "❤️ Eu prometo fazer o meu melhor para te fazer feliz ❤️";
+}
+</script>
+
+</body>
+</html>
